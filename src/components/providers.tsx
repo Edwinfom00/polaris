@@ -20,8 +20,8 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
                     disableTransitionOnChange
                 >
                     <Authenticated>
-                        {children}
                         <UserButton />
+                        {children}
                     </Authenticated>
                     <Unauthenticated>
                         <UnauthenticatedView />
